@@ -5,12 +5,12 @@ import logo from '../../images/download.webp'
 const Header = () => {
     const activeStyle = {
         fontWeight: "bold",
-        color: "red",
-        borderBottom: '2px solid red'
+        color: "#FFFF00",
+        borderBottom: '3px solid #FFFF00'
     }
     const link = {
         color: '#fff',
-        padding: '15px',
+        padding: '16px',
         textDecoration: 'none',
 
     }
@@ -18,7 +18,7 @@ const Header = () => {
         <nav className="bg-dark p-3">
             <div className="row">
                 <div className=" col-md-4">
-                    <img src={logo} alt="" width="80" />
+                    <img src={logo} alt="" width="110" />
                 </div>
                 <div className="col-sm-12 col-md-8">
                     <NavLink style={link} activeStyle={activeStyle} exact to="/">
