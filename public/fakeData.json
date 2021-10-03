@@ -1,4 +1,4 @@
-'[
+[
     {
         "id": "6159ed8ec2ff735cca535661",
         "title": "A deep understanding of deep learning (with Python intro",
@@ -89,4 +89,4 @@
         "image": "https://img-c.udemycdn.com/course/240x135/4261752_af11_6.jpg",
         "description": "Learn numpy , pandas , matplotlib , quantopian , finance , and more for algorithmic trading with Python!"
     }
-]'
+]

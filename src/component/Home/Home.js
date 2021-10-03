@@ -1,12 +1,17 @@
-import React from 'react';
-import Header from '../Header/Header';
-
+import React, { useEffect, useState } from 'react';
+import Course from '../Course/Course';
 const Home = () => {
-
-    
+    const [courses, setCourses] = useState([])
+    useEffect(() => {
+        fetch('/fakeData.JSON')
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    }, [])
     return (
-        <div>
-            
+        <div className="row">
+            {
+                courses?.map(course => <Course course={course}></Course>)
+            }
         </div>
     );
 };
