@@ -1,0 +1,92 @@
+'[
+    {
+        "id": "6159ed8ec2ff735cca535661",
+        "title": "A deep understanding of deep learning (with Python intro",
+        "author": "Mike X Cohen",
+        "Rating": 4.8,
+        "price": 15,
+        "image": "https://img-c.udemycdn.com/course/240x135/4221858_0d53_2.jpg",
+        "description": "Master deep learning in PyTorch using an experimental scientific approach, with lots of examples and practice problems."
+    },
+    {
+        "id": "6159ed8ec2ff735cca535662",
+        "title": "Git & GitHub - The Practical Guide",
+        "author": "Jose Portilla",
+        "Rating": 4.83,
+        "price": 16.44,
+        "image": "https://img-c.udemycdn.com/course/240x135/4188320_d3e3_3.jpg",
+        "details": "Learn Git & GitHub and master working with commits, branches, the stash, cherry picking, rebasing, pull requests & more!"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535663",
+        "title": "Postman for API Automation Testing with Javascript -2021",
+        "author": "Rahul Shetty",
+        "Rating": 4.2,
+        "price": 11.99,
+        "image": "https://img-c.udemycdn.com/course/240x135/4221858_0d53_2.jpg",
+        "description": "RAND NEW COURSE- Advanced Postman tutorial to learn API /Web Services testing including CI/CD Integration from scratch"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535664",
+        "title": "A deep understanding of deep learning (with Python intro",
+        "author": "Mumshad Mannambeth",
+        "Rating": 4.5,
+        "price": 10,
+        "image": "https://img-c.udemycdn.com/course/240x135/4172946_c417_2.jpg",
+        "description": "Everything you need to pass the CompTIA Security+ (SY0-601) exam from Mike Meyers and Dan Lachance"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535665",
+        "title": "Terraform for the Absolute Beginners with Labs",
+        "author": "Karl Katsube",
+        "Rating": 4.8,
+        "price": 15,
+        "image": "https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg",
+        "description": "Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535666",
+        "title": "Complete Python Developer in 2021: Zero to Mastery",
+        "author": "Azzuddin Rizal Ramli",
+        "Rating": 4.8,
+        "price": 15,
+        "image": "https://img-c.udemycdn.com/course/240x135/2776760_f176_6.jpg",
+        "description": "Learn how to use NumPy, Pandas, Seaborn , Matplotlib , Plotly , Scikit-Learn , Machine Learning, Tensorflow , and more!"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535667",
+        "title": "The Python Mega Course: Build 10 Real World Applicationso",
+        "author": "Kamil Kosno",
+        "Rating": 4.8,
+        "price": 15,
+        "image": "https://img-c.udemycdn.com/course/240x135/692188_9da7_21.jpg",
+        "description": "Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535668",
+        "title": "Python and Django Full Stack Web Developer Bootcamp",
+        "author": "Dr. Angela Yu",
+        "Rating": 4.8,
+        "price": 15,
+        "image": "https://img-c.udemycdn.com/course/240x135/903744_8eb2.jpg",
+        "description": "Learn Python Programming and Conduct Real-World Financial Analysis in Python - Complete Python Training"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535669",
+        "title": "100 Days of Code - The Complete Python Pro Bootcamp for 2021",
+        "author": "Hadelin de Ponteves",
+        "Rating": 4.8,
+        "price": 15,
+        "image": "https://img-c.udemycdn.com/course/240x135/4172946_c417_2.jpg",
+        "description": "Learn to build websites with HTML , CSS , Bootstrap , Javascript , jQuery , Python 3 , and Django!"
+    },
+    {
+        "id": "6159ed8ec2ff735cca535670",
+        "title": "Learning Python for Data Analysis and Visualization",
+        "author": "Kirill Eremenko",
+        "Rating": 4.8,
+        "price": 15,
+        "image": "https://img-c.udemycdn.com/course/240x135/4261752_af11_6.jpg",
+        "description": "Learn numpy , pandas , matplotlib , quantopian , finance , and more for algorithmic trading with Python!"
+    }
+]'
