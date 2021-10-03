@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className="row">
             {
-                courses?.map(course => <Course course={course}></Course>)
+                courses?.map(course => <Course course={course} key={course.id}></Course>)
             }
         </div>
     );
