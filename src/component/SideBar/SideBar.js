@@ -1,10 +1,19 @@
 import React from 'react';
+import { Card, Col, Row } from 'react-bootstrap';
 
-const SideBar = () => {
+const SideBar = (props) => {
+    const{image, title} =props.category
     return (
-        <div>
-            This is side bar page
-        </div>
+        <Col>
+            <Card >
+                <Card.Img variant="top" src={image} />
+                <Card.Body>
+                    <Card.Title className="text-center">{title}</Card.Title>
+                </Card.Body>
+
+            </Card>
+        </Col>
+        
     );
 };
 

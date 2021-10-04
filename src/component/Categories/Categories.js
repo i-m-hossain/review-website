@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import useCategories from '../../hooks/useCategories';
 import Category from '../Category/Category';
 
 const Categories = () => {
-    const [categories, setCategories] = useState([])
-    useEffect(()=> {
-        fetch('/fakeSubjects.json')
-        .then(res => res.json())
-        .then(data => setCategories(data))
-    },[])
+    const [categories, setCategories] = useCategories()
     return (
         <div style={{ backgroundColor: 'rgba(0,0,0,0.2)'  }} className="pt-2">
             <h2 className='text-center mx-5 p-2 rounded mx-auto ' style={{border: '1px dotted', width:'400px' }}>Categories</h2>
