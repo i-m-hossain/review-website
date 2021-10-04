@@ -1,21 +1,16 @@
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useCategories from '../../hooks/useCategories';
+import useCourses from '../../hooks/useCourses';
 import Category from '../Category/Category';
 import Course from '../Course/Course';
 const Home = () => {
-    const [courses, setCourses] = useState([])
-    const [categories, setCategories] = useState([])
-    useEffect(() => {
-        fetch('/fakeData.JSON')
-            .then(res => res.json())
-            .then(data => setCourses(data))
-    }, [])
-    useEffect(() => {
-        fetch('/fakeSubjects.json')
-            .then(res => res.json())
-            .then(data => setCategories(data))
-    }, [])
+    const [courses, setCourses] = useCourses()
+    const [categories, setCategories] = useCategories()
+    
     const homeCourses = courses.slice(0, 4)
     const homeCategories = categories.slice(0, 4)
     return (
@@ -37,7 +32,7 @@ const Home = () => {
                         homeCategories?.map(category => <Category category={category} key={category.id}></Category>)
                     }
                     <Link to='/categories' className="text-uppercase px-5 py-2 mx-auto text-center text-decoration-none rounded" style={{ backgroundColor: '#FFFF00', border: '0', color: '#000', fontWeight: "bold",  }}>
-                        All categories
+                        <FontAwesomeIcon icon={faPlus} style={{ fontSize: "20px" }} /> All categories
                     </Link>
                 
                 

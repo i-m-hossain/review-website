@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import useCourses from '../../hooks/useCourses';
 import Course from '../Course/Course';
 
 const Services = () => {
-    const [courses, setCourses] = useState([])
-    useEffect(() => {
-        fetch('/fakeData.JSON')
-            .then(res => res.json())
-            .then(data => setCourses(data))
-    }, [])
+    const [courses, setCourses] = useCourses()
     return (
         <section style={{ backgroundColor: 'rgba(0,0,0,0.2)' }} className="pt-2">
             <h2 className='text-center mx-5 p-2 rounded mx-auto ' style={{ border: '1px dotted', width: '400px' }}>Services</h2>

@@ -1,3 +1,5 @@
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router';
@@ -19,7 +21,8 @@ const Course = (props) => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer style={{ backgroundColor: '#FFFF00'}} className="d-flex justify-content-center">
-                    <Button onClick={handleClick} style={{ backgroundColor: '#FFFF00', border: '0', color: '#000',fontWeight:"bold" }} className="text-uppercase">Details</Button>
+                    <Button onClick={handleClick} style={{ backgroundColor: '#FFFF00', border: '0', color: '#000',fontWeight:"bold" }} className="text-uppercase">
+                    <FontAwesomeIcon icon={faInfoCircle} style={{fontSize: "20px"}}/>  Details</Button>
                 </Card.Footer>
             </Card>
         </Col>
