@@ -9,10 +9,14 @@ import Courses from './component/Services/Services';
 import Categories from './component/Categories/Categories';
 import About from './component/About/About';
 import NotFound from './component/NotFound/NotFound' ;
+import { createContext } from 'react';
+import useCategories from './hooks/useCategories';
+export const SidebarContext = createContext('sidebar')
 
 function App() {
+  const [categories, setCategories] = useCategories()
   return (
-    <div>
+    <SidebarContext.Provider value={[categories, setCategories]}>
       <Router>
         <Header></Header>
         <Switch>
@@ -40,7 +44,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
-    </div>
+    </SidebarContext.Provider>
   );
 }
 

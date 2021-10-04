@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import SideBar from '../SideBar/SideBar';
-import logo from "../../images/download.webp"
-import useCategories from '../../hooks/useCategories';
+import logo from "../../images/download.webp";
 import { Row } from 'react-bootstrap';
+import { SidebarContext } from '../../App';
 
 const About = () => {
-    const [categories] = useCategories()
+    const [categories] = useContext(SidebarContext)
     return (
         <section style={{ backgroundColor: 'rgba(0,0,0,0.2)' }} className="py-2">
             <h2 className='text-center mx-5 p-2 rounded mx-auto ' style={{ border: '1px dotted', width: '400px' }}>About us</h2>
@@ -54,7 +54,7 @@ const About = () => {
                     <Row xs={1} md={1} className="g-4 mx-5 pb-5 mt-3" >
                         
                         {
-                            categories.map(category => <SideBar category={category}></SideBar>)
+                            categories?.map(category => <SideBar category={category}></SideBar>)
                         }
                     </Row>
                 </div>

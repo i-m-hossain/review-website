@@ -33,14 +33,12 @@ const Details = () => {
                                 <p>Price: <span className="text-danger">${courseDetails?.price}</span> </p>
                                 <p>
                                     <Rating
-                                        initialRating={courseDetails?.Rating}
+                                        initialRating={courseDetails?.rating}
                                         emptySymbol={emptySymbol}
                                         fullSymbol={fullSymbol}
                                         readonly
-                                    />({courseDetails?.Rating})
+                                    />({courseDetails?.rating})
                                 </p>
-                                
-
                             </div>
                         </Card.Body>
                         <Card.Footer className="d-flex justify-content-center bg-dark">
