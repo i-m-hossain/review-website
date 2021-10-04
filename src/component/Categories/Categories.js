@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { Row } from 'react-bootstrap';
 import { SidebarContext } from '../../App';
-import useCategories from '../../hooks/useCategories';
 import Category from '../Category/Category';
 
 const Categories = () => {

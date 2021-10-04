@@ -1,6 +1,6 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Card, Col, Row, Button } from 'react-bootstrap';
 import Rating from 'react-rating';
 import { useHistory, useParams } from 'react-router';
@@ -9,7 +9,7 @@ import useCourses from '../../hooks/useCourses';
 
 const Details = () => {
     const { courseId } = useParams()
-    const [courses, setCourses] =useCourses()
+    const [courses] =useCourses()
     const history = useHistory()
     const handleClick =()=>{
         history.push('/services')
