@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import Course from '../Course/Course';
 
 const Services = () => {
     const [courses, setCourses] = useState([])
@@ -9,23 +10,12 @@ const Services = () => {
             .then(data => setCourses(data))
     }, [])
     return (
-        <div>
-            <Row xs={1} md={3} className="g-4">
+        <div style={{ backgroundColor: 'rgba(0,0,0,0.2)' }}>
+            <h2 className='text-center pt-3'>Services</h2>
+            <Row xs={1} md={3} className="g-4 mx-5 pb-5 mt-3">
                 {
-                    courses?.map(course => {
-                        const { title, Rating, price, image, description} = course
-                        return <Col key={course.id}>
-                                    <Card>
-                                        <Card.Img variant="top" src={image} />
-                                        <Card.Body>
-                                            <Card.Title>{title}</Card.Title>
-                                            <Card.Text>
-                                        {description}
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                    })
+                    courses?.map(course =>  <Course course={course} key={course.id}></Course>
+                    )
                 }
             </Row>
         </div>

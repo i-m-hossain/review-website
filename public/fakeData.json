@@ -15,7 +15,7 @@
         "Rating": 4.83,
         "price": 16.44,
         "image": "https://img-c.udemycdn.com/course/240x135/4188320_d3e3_3.jpg",
-        "details": "Learn Git & GitHub and master working with commits, branches, the stash, cherry picking, rebasing, pull requests & more!"
+        "description": "Learn Git & GitHub and master working with commits, branches, the stash, cherry picking, rebasing, pull requests & more!"
     },
     {
         "id": "6159ed8ec2ff735cca535663",
@@ -90,3 +90,4 @@
         "description": "Learn numpy , pandas , matplotlib , quantopian , finance , and more for algorithmic trading with Python!"
     }
 ]
+

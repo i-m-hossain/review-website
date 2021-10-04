@@ -1,21 +1,28 @@
 import React from 'react';
+import { Card, Col, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 const Course = (props) => {
-    const {title,Rating, author, id, image, price} = props.course
+    const { title, Rating, author, id, image, price, description} = props.course
     const history = useHistory()
     const handleClick = () =>{
         history.push(`details/${id}`)
     }
     return (
-        <div className="col-md-4 col-sm-6">
-            <img src={image} alt="" />
-            <h4>{title}</h4>
-            <p>{Rating}</p>
-            <p>{author}</p>
-            <button onClick={handleClick}>Course details</button>
-
-        </div>
+        <Col>
+            <Card style={{height: '450px'}}>
+                <Card.Img variant="top" src={image} />
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>
+                        {description}
+                    </Card.Text>
+                </Card.Body>
+                <Card.Footer style={{ backgroundColor: '#FFFF00'}} className="d-flex justify-content-center">
+                    <Button onClick={handleClick} style={{ backgroundColor: '#FFFF00', border: '0', color: '#000',fontWeight:"bold" }} className="text-uppercase">Details</Button>
+                </Card.Footer>
+            </Card>
+        </Col>
     );
 };
 

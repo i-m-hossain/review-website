@@ -14,7 +14,7 @@ const Footer = () => {
 
                 </div>
                 <div className="col-md-6 col-sm-12">
-                    <h6 className="text-light">Links</h6>
+                    <h6 className="text-light text-center">Links</h6>
                     <div className="d-flex flex-column align-items-center">
                         <Link className="p-1 text-light" to="/services">Services</Link>
                         <Link className="p-1 text-light" to="/subjects">Subjects</Link>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="text-light mt-5"> Md Imran Hossain &copy; 2021 All rights reserved</p>
+            <p className="text-light mt-5 text-center"> Md Imran Hossain &copy; 2021 All rights reserved</p>
         </footer>
     );
 };
