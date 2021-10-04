@@ -8,6 +8,7 @@ import Details from './component/Details/Details';
 import Courses from './component/Services/Services';
 import Categories from './component/Categories/Categories';
 import About from './component/About/About';
+import NotFound from './component/NotFound/NotFound' ;
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             <About></About>
           </Route>
           <Route path="*">
-
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>

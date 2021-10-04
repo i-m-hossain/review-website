@@ -20,8 +20,8 @@ const Course = (props) => {
                         {description}
                     </Card.Text>
                 </Card.Body>
-                <Card.Footer style={{ backgroundColor: '#FFFF00'}} className="d-flex justify-content-center">
-                    <Button onClick={handleClick} style={{ backgroundColor: '#FFFF00', border: '0', color: '#000',fontWeight:"bold" }} className="text-uppercase">
+                <Card.Footer  className=" bg-dark d-flex justify-content-center">
+                    <Button onClick={handleClick} style={{ border: '0', color: '#000', fontWeight: "bold" }} className="text-uppercase bg-dark text-light">
                     <FontAwesomeIcon icon={faInfoCircle} style={{fontSize: "20px"}}/>  Details</Button>
                 </Card.Footer>
             </Card>

@@ -1,6 +1,6 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useCategories from '../../hooks/useCategories';
@@ -8,9 +8,8 @@ import useCourses from '../../hooks/useCourses';
 import Category from '../Category/Category';
 import Course from '../Course/Course';
 const Home = () => {
-    const [courses, setCourses] = useCourses()
-    const [categories, setCategories] = useCategories()
-    
+    const [courses] = useCourses()
+    const [categories] = useCategories()
     const homeCourses = courses.slice(0, 4)
     const homeCategories = categories.slice(0, 4)
     return (
@@ -31,7 +30,7 @@ const Home = () => {
                     {
                         homeCategories?.map(category => <Category category={category} key={category.id}></Category>)
                     }
-                    <Link to='/categories' className="text-uppercase px-5 py-2 mx-auto text-center text-decoration-none rounded" style={{ backgroundColor: '#FFFF00', border: '0', color: '#000', fontWeight: "bold",  }}>
+                    <Link to='/categories' className="bg-dark text-uppercase px-5 py-2 mx-auto text-center text-decoration-none rounded" style={{  border: '0', color: '#fff', fontWeight: "bold",  }}>
                         <FontAwesomeIcon icon={faPlus} style={{ fontSize: "20px" }} /> All categories
                     </Link>
                 

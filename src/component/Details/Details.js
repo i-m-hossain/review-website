@@ -1,19 +1,19 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row, Button } from 'react-bootstrap';
 import Rating from 'react-rating';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
+import useCourses from '../../hooks/useCourses';
 
 
 const Details = () => {
     const { courseId } = useParams()
-    const [courses, setCourses] =useState([])
-    useEffect(()=>{
-        fetch('/fakeData.JSON')
-        .then(res => res.json())
-            .then(data => setCourses(data))
-    },[])
+    const [courses, setCourses] =useCourses()
+    const history = useHistory()
+    const handleClick =()=>{
+        history.push('/services')
+    }
     const courseDetails = courses.find(course => course.id === courseId)
     const emptySymbol = <FontAwesomeIcon icon={faStar} className="text-light"/>
     const fullSymbol = <FontAwesomeIcon icon={faStar} className="text-warning"/>
@@ -43,6 +43,11 @@ const Details = () => {
 
                             </div>
                         </Card.Body>
+                        <Card.Footer className="d-flex justify-content-center bg-dark">
+                            <Button onClick={handleClick} style={{  border: '0', color: '#000', fontWeight: "bold" }} className="text-uppercase bg-dark text-light">
+                              Go back
+                            </Button>
+                        </Card.Footer>
                     </Card>
                 </Col>
             </Row>
