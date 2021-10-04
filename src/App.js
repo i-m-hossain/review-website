@@ -6,6 +6,8 @@ import Header from './component/Header/Header';
 import Footer from './component/Footer/Footer'
 import Details from './component/Details/Details';
 import Courses from './component/Services/Services';
+import Categories from './component/Categories/Categories';
+import About from './component/About/About';
 
 function App() {
   return (
@@ -24,6 +26,15 @@ function App() {
           </Route>
           <Route path="/details/:courseId">
             <Details></Details>
+          </Route>
+          <Route path="/categories"> 
+            <Categories></Categories>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="*">
+
           </Route>
         </Switch>
         <Footer></Footer>

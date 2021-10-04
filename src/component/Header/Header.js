@@ -27,8 +27,8 @@ const Header = () => {
                     <NavLink style={link} activeStyle={activeStyle} to="/services">
                         Services
                     </NavLink>
-                    <NavLink style={link} activeStyle={activeStyle} to="/subjects">
-                        Subjects
+                    <NavLink style={link} activeStyle={activeStyle} to="/categories">
+                        Categories
                     </NavLink>
                     <NavLink style={link} activeStyle={activeStyle} to="/about">
                         About
