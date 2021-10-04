@@ -36,7 +36,7 @@ const Home = () => {
                     {
                         homeCategories?.map(category => <Category category={category} key={category.id}></Category>)
                     }
-                    <Link to='/category' className="text-uppercase px-5 py-2 mx-auto text-center text-decoration-none rounded" style={{ backgroundColor: '#FFFF00', border: '0', color: '#000', fontWeight: "bold",  }}>
+                    <Link to='/categories' className="text-uppercase px-5 py-2 mx-auto text-center text-decoration-none rounded" style={{ backgroundColor: '#FFFF00', border: '0', color: '#000', fontWeight: "bold",  }}>
                         All categories
                     </Link>
                 
